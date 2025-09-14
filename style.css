@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(243, 96%, 9%);
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("../assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype"),
+        url("../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vh;
+}
+
+.logo{
+    margin-left: 5vw;
+}
+.dropdown {
+    height: 45vh;
+    width: 12vw;
+    background-color: hsl(242, 27%, 20%);
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 9px;
+    border-radius: 6px;
+    font-family: "DM Sans", sans-serif;
+    display: none;
+}
+
+
+.dropdown-btn {
+    display: flex;
+    gap: 3px;
+    border: none;
+    background-color: hsl(242, 27%, 20%);
+    height: 6vh;
+    width: 9vw;
+    padding-top: 7px;
+    padding-left: 7px;
+    color: hsl(250, 6%, 84%);
+    font-size: 3vh;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5vw;
+
+}
+
+.dropdown-btn:hover {
+    border: none;
+    outline: 2px solid hsl(250, 6%, 84%);
+    outline-offset: 4px;
+}
+
+
+.unitimg {
+    height: 13px;
+    width: 13px;
+    margin-left: 5px;
+
+
+
+}
+
+.downimgunit {
+    height: 2vh;
+    width: 3vw;
+    margin-top: 3px;
+}
+
+.drop-down-item-switch {
+    color: hsl(250, 6%, 84%);
+    font-size: 2.8vh;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.drop-down-item-switch:hover {
+    height: 4vh;
+    width: 10vw;
+    padding-left: 2px;
+    padding-top: 4px;
+    border-radius: 5px;
+    background-color: hsl(243, 23%, 24%);
+}
+
+.temperature p {
+    font-size: 2vh;
+    margin-top: 5px;
+    color: hsl(240, 6%, 70%);
+    font-weight: 100;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: column;
+}
+
+.wind-speed {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.wind-speed p {
+    font-size: 2vh;
+    margin-top: 5px;
+    color: hsl(240, 6%, 70%);
+    font-weight: 300;
+}
+
+
+
+.Precipitation {
+    display: flex;
+    flex-direction: column;
+}
+
+.Precipitation p{
+     font-size: 2vh;
+    margin-top: 5px;
+    color: hsl(240, 6%, 70%);
+    font-weight: 300;
+}
+
+.line {
+    width: 10vw;
+    height: 0.2px;
+    background-color: hsl(240, 6%, 70%);
+    margin-top: -12px;
+    border-radius: 5px;
+}
+.line2{
+    width: 10vw;
+    height: 0.2px;
+    background-color: hsl(240, 6%, 70%);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+.Celsiusbtn {
+    display: flex;
+    flex: end;
+    border: none;
+    background: none;
+    color: hsl(250, 6%, 84%);
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.checkimg {
+    height: 14px;
+    width: 10px;
+    margin-left: 12px;
+    display: none;
+}
+
+
+.Fahrenheitbtn {
+    display: flex;
+    flex: end;
+    border: none;
+    background: none;
+    color: hsl(250, 6%, 84%);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.kmh-btn {
+    display: flex;
+    flex: end;
+    border: none;
+    background: none;
+    color: hsl(250, 6%, 84%);
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.mph {
+    display: flex;
+    flex: end;
+    border: none;
+    background: none;
+    color: hsl(250, 6%, 84%);
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.Millimetersbtn {
+    display: flex;
+    flex: end;
+    border: none;
+    background: none;
+     color: hsl(250, 6%, 84%);
+    margin-top: 5px;
+    cursor: pointer;
+    
+
+}
+
+.Inchesbtn {
+    display: flex;
+    flex: end;
+    border: none;
+    background: none;
+     color: hsl(250, 6%, 84%);
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+
+.clicked{
+     height: 5vh;
+    width: 10vw;
+    padding-left: 2px;
+    padding-top: 4px;
+    border-radius: 5px;
+    background-color: hsl(243, 23%, 24%);
+}

@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="logo"><img src="./weather-app-main/assets/images/logo.svg" alt="" class="main-logo"></div>
+           
+            <button class="dropdown-btn"> <img src="./weather-app-main/assets/images/icon-units.svg" alt="" class="unitimg"><p>Units </p><img src="./weather-app-main/assets/images/arrow-down-s-line.svg" alt="" class="downimgunit"></button>
+            <div class="dropdown">
+                <div class="dropdown-menu">
+                    <div class="drop-down-item-switch">
+                        Switch to Imperial
+                    </div>
+                    <!-- section temperture -->
+                     <div class="temperature">
+                     <p>Temperature</p>
+                     <button class="Celsiusbtn">Celsius (°C) <img src="./weather-app-main/assets/images/icon-checkmark.svg"  alt="" class="checkimg"></button>
+                     <button class="Fahrenheitbtn">Fahrenheit(°F) <img src="./weather-app-main/assets/images/icon-checkmark.svg"  alt="" class="checkimg"></button>
+                    </div>
+                    .
+                    <div class="line"></div>
+                     <!-- Wind-speed -->
+                      <div class="wind-speed">
+                     <p>Wind Speed</p>
+                     <button class="kmh-btn">km/h <img src="./weather-app-main/assets/images/icon-checkmark.svg"  alt="" class="checkimg"></button>
+                     <button class="mph">mph <img src="./weather-app-main/assets/images/icon-checkmark.svg"  alt="" class="checkimg"></button>
+                    </div>
+
+                    <div class="line2"></div>
+                     <!--  Precipitation -->
+                       <div class="Precipitation">
+                       <p> Precipitation</p>
+                       <button class="Millimetersbtn">Millimeters(mm) <img src="./weather-app-main/assets/images/icon-checkmark.svg"  alt="" class="checkimg"></button>
+                       <button class="Inchesbtn">Inches(in) <img src="./weather-app-main/assets/images/icon-checkmark.svg"  alt="" class="checkimg"></button>
+                        </div>
+                        <div class="clicked"></div>
+
+                </div>
+            </div>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
