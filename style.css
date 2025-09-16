@@ -1,231 +1,226 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+ * {
+     margin: 0;
+     padding: 0;
+ }
 
-body {
-    background-color: hsl(243, 96%, 9%);
-}
+ body {
+     background-color: hsl(243, 96%, 9%);
+     font-size: 1rem;
+     /* base size for rem scaling */
+ }
 
-@font-face {
-    font-family: "DM Sans";
-    src: url("../assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype"),
-        url("../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
-    font-weight: 100 900;
-    font-style: normal;
-}
+ /* Fonts */
+ @font-face {
+     font-family: "DM Sans";
+     src: url("../assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype"),
+         url("../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+     font-weight: 100 900;
+     font-style: normal;
+ }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6vh;
-}
+ @font-face {
+     font-family: "Bricolage Grotesque";
+     src: url("./weather-app-main/assets/fonts/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf") format("truetype");
 
-.logo{
-    margin-left: 5vw;
-}
-.dropdown {
-    height: 45vh;
-    width: 12vw;
-    background-color: hsl(242, 27%, 20%);
-    margin-top: 5px;
-    padding-top: 5px;
-    padding-left: 9px;
-    border-radius: 6px;
-    font-family: "DM Sans", sans-serif;
-    display: none;
-}
+     font-weight: 100 900;
+     font-style: normal;
+ }
 
+ /* Navbar */
+ nav {
+     margin-top: 4rem;
+ }
 
-.dropdown-btn {
-    display: flex;
-    gap: 3px;
-    border: none;
-    background-color: hsl(242, 27%, 20%);
-    height: 6vh;
-    width: 9vw;
-    padding-top: 7px;
-    padding-left: 7px;
-    color: hsl(250, 6%, 84%);
-    font-size: 3vh;
-    border-radius: 6px;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 5vw;
+ .nav-elements {
+     display: flex;
+     justify-content: space-between;
+     margin-top: -1rem;
+ }
 
-}
+ .logo {
+     margin-left: 5%;
+ }
 
-.dropdown-btn:hover {
-    border: none;
-    outline: 2px solid hsl(250, 6%, 84%);
-    outline-offset: 4px;
-}
+ /* Dropdown */
+ .dropdown {
+     position: absolute;
+     right: 5%;
+     margin-top: 0.5rem;
+     background-color: hsl(242, 27%, 20%);
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+     font-family: "DM Sans", sans-serif;
+     display: none;
+     width: 12rem;
+     /* fixed readable width */
+     max-width: 90%;
+     /* shrink on mobile */
+ }
 
-
-.unitimg {
-    height: 13px;
-    width: 13px;
-    margin-left: 5px;
-
-
-
-}
-
-.downimgunit {
-    height: 2vh;
-    width: 3vw;
-    margin-top: 3px;
-}
-
-.drop-down-item-switch {
-    color: hsl(250, 6%, 84%);
-    font-size: 2.8vh;
-    text-align: left;
-    cursor: pointer;
-
-}
-
-.drop-down-item-switch:hover {
-    height: 4vh;
-    width: 10vw;
-    padding-left: 2px;
-    padding-top: 4px;
-    border-radius: 5px;
-    background-color: hsl(243, 23%, 24%);
-}
-
-.temperature p {
-    font-size: 2vh;
-    margin-top: 5px;
-    color: hsl(240, 6%, 70%);
-    font-weight: 100;
-}
-
-.temperature {
-    display: flex;
-    flex-direction: column;
-}
-
-.wind-speed {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.wind-speed p {
-    font-size: 2vh;
-    margin-top: 5px;
-    color: hsl(240, 6%, 70%);
-    font-weight: 300;
-}
-
-
-
-.Precipitation {
-    display: flex;
-    flex-direction: column;
-}
-
-.Precipitation p{
-     font-size: 2vh;
-    margin-top: 5px;
-    color: hsl(240, 6%, 70%);
-    font-weight: 300;
-}
-
-.line {
-    width: 10vw;
-    height: 0.2px;
-    background-color: hsl(240, 6%, 70%);
-    margin-top: -12px;
-    border-radius: 5px;
-}
-.line2{
-    width: 10vw;
-    height: 0.2px;
-    background-color: hsl(240, 6%, 70%);
-    margin-top: 5px;
-    border-radius: 5px;
-}
-
-
-.Celsiusbtn {
-    display: flex;
-    flex: end;
-    border: none;
-    background: none;
-    color: hsl(250, 6%, 84%);
-    margin-top: 7px;
-    cursor: pointer;
-}
-
-.checkimg {
-    height: 14px;
-    width: 10px;
-    margin-left: 12px;
-    display: none;
-}
-
-
-.Fahrenheitbtn {
-    display: flex;
-    flex: end;
-    border: none;
-    background: none;
-    color: hsl(250, 6%, 84%);
-    margin-top: 5px;
-    cursor: pointer;
-}
-
-.kmh-btn {
-    display: flex;
-    flex: end;
-    border: none;
-    background: none;
-    color: hsl(250, 6%, 84%);
-    margin-top: 5px;
-    cursor: pointer;
-}
-
-.mph {
-    display: flex;
-    flex: end;
-    border: none;
-    background: none;
-    color: hsl(250, 6%, 84%);
-    margin-top: 5px;
-    cursor: pointer;
-
-}
-
-.Millimetersbtn {
-    display: flex;
-    flex: end;
-    border: none;
-    background: none;
+ .dropdown-btn {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     border: none;
+     background-color: hsl(242, 27%, 20%);
+     padding: 0.25rem 1rem;
+     /* smaller top/bottom, same left/right */
      color: hsl(250, 6%, 84%);
-    margin-top: 5px;
-    cursor: pointer;
-    
+     font-size: 1rem;
+     border-radius: 0.5rem;
+     cursor: pointer;
+     margin-right: 5%;
 
-}
 
-.Inchesbtn {
-    display: flex;
-    flex: end;
-    border: none;
-    background: none;
+ }
+
+ .dropdown-btn:hover {
+     outline: 2px solid hsl(250, 6%, 84%);
+     outline-offset: 0.25rem;
+ }
+
+ /* Dropdown items */
+ .unitimg {
+     height: 0.875rem;
+     width: 0.875rem;
+     margin-left: 8px;
+ }
+
+ .downimgunit {
+     height: 1rem;
+     width: 1rem;
+     margin-top: 0.25rem;
+ }
+
+ .drop-down-item-switch {
      color: hsl(250, 6%, 84%);
-    margin-top: 5px;
-    cursor: pointer;
-    
-}
+     font-size: 0.9rem;
+     text-align: left;
+     cursor: pointer;
+     padding: 0.25rem 0.5rem;
+ }
 
-.clicked{
-     height: 5vh;
-    width: 10vw;
-    padding-left: 2px;
-    padding-top: 4px;
-    border-radius: 5px;
-    background-color: hsl(243, 23%, 24%);
-}
+ .drop-down-item-switch:hover {
+     border-radius: 0.25rem;
+     background-color: hsl(243, 23%, 24%);
+ }
+
+ /* Temperature, Wind, Precipitation */
+ .temperature p,
+ .wind-speed p,
+ .Precipitation p {
+     font-size: 0.9rem;
+     margin-top: 0.25rem;
+     color: hsl(240, 6%, 70%);
+     font-weight: 300;
+ }
+
+ .temperature,
+ .wind-speed,
+ .Precipitation {
+     display: flex;
+     flex-direction: column;
+ }
+
+ /* Divider lines */
+ .line,
+ .line2 {
+     width: 90%;
+     height: 1px;
+     background-color: hsl(240, 6%, 70%);
+     margin: 0.5rem 0;
+     border-radius: 0.25rem;
+ }
+
+
+ .Celsiusbtn,
+ .Fahrenheitbtn,
+ .kmh-btn,
+ .mph,
+ .Millimetersbtn,
+ .Inchesbtn {
+     display: flex;
+     align-items: center;
+     border: none;
+     background: none;
+     color: hsl(250, 6%, 84%);
+     margin-top: 0.5rem;
+     cursor: pointer;
+     font-size: 0.9rem;
+ }
+
+ .checkimg {
+     height: 0.9rem;
+     width: 0.75rem;
+     margin-left: 0.75rem;
+     display: none;
+ }
+
+ .clicked {
+     background-color: hsl(243, 23%, 24%);
+     border-radius: 0.25rem;
+     padding: 0.25rem;
+ }
+
+
+ .main-heading {
+     display: flex;
+     justify-content: center;
+     margin-top: 1rem;
+ }
+
+ .main-heading h1 {
+     color: hsl(0, 0%, 100%);
+     font-family: "Bricolage Grotesque";
+     font-size: 2rem;
+ }
+
+
+ .input {
+     display: flex;
+     justify-content: center;
+     margin-top: 2rem;
+     gap: 5.5rem;
+     flex-wrap: wrap;
+ }
+
+ .input input {
+     font-size: 1rem;
+     padding: 0.5rem 1rem;
+     border-radius: 0.5rem;
+     width: 115%;
+     max-width: 313px;
+     margin-right: 2rem;
+     background-color: hsl(243, 27%, 20%);
+     border: none;
+ }
+
+ input ::placeholder {
+     color: hsl(0, 0%, 100%);
+     opacity: 1;
+ }
+
+ .searchbtn button {
+     height: 80%;
+     width: 6vw;
+     padding-bottom: 0.6rem;
+     padding-top: 0.6rem;
+     margin-top: 0.1rem;
+     border-radius: 8px;
+     text-align: center;
+     background-color: hsl(233, 67%, 56%);
+     color: hsl(0, 0%, 100%);
+     border: none;
+     cursor: pointer;
+ }
+
+
+
+ .show-wheather-container {
+     border: 2px solid black;
+     min-height: 36vh;
+     width: 51%;
+     max-width: 452px;
+     margin-left: 5rem;
+     margin-top: 1.5rem;
+ }
