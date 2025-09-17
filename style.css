@@ -12,11 +12,24 @@
  /* Fonts */
  @font-face {
      font-family: "DM Sans";
-     src: url("../assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf") format("truetype"),
-         url("../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+     src: url("./weather-app-main/assets/fonts/DMSans-VariableFont_opsz\,wght.ttf") format("truetype");
      font-weight: 100 900;
      font-style: normal;
  }
+
+ @font-face {
+     font-family: "DM Sans";
+     src: url("./weather-app-main/assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf") format("turetype");
+     font-style: italic;
+ }
+
+ @font-face {
+     font-family: "DM Sans";
+     src: url("../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz%2Cwght.ttf") format("truetype");
+     font-weight: 100 900;
+     font-style: italic;
+ }
+
 
  @font-face {
      font-family: "Bricolage Grotesque";
@@ -26,7 +39,7 @@
      font-style: normal;
  }
 
- /* Navbar */
+
  nav {
      margin-top: 4rem;
  }
@@ -41,7 +54,7 @@
      margin-left: 5%;
  }
 
- /* Dropdown */
+
  .dropdown {
      position: absolute;
      right: 5%;
@@ -52,9 +65,9 @@
      font-family: "DM Sans", sans-serif;
      display: none;
      width: 12rem;
-     /* fixed readable width */
+
      max-width: 90%;
-     /* shrink on mobile */
+
  }
 
  .dropdown-btn {
@@ -64,7 +77,6 @@
      border: none;
      background-color: hsl(242, 27%, 20%);
      padding: 0.25rem 1rem;
-     /* smaller top/bottom, same left/right */
      color: hsl(250, 6%, 84%);
      font-size: 1rem;
      border-radius: 0.5rem;
@@ -79,7 +91,7 @@
      outline-offset: 0.25rem;
  }
 
- /* Dropdown items */
+
  .unitimg {
      height: 0.875rem;
      width: 0.875rem;
@@ -180,7 +192,7 @@
      display: flex;
      justify-content: center;
      margin-top: 2rem;
-     gap: 5.5rem;
+     gap: 5.3rem;
      flex-wrap: wrap;
  }
 
@@ -217,10 +229,75 @@
 
 
  .show-wheather-container {
-     border: 2px solid black;
-     min-height: 36vh;
-     width: 51%;
-     max-width: 452px;
-     margin-left: 5rem;
+     display: flex;
+     gap: 13rem;
+     background: url("./weather-app-main/assets/images/bg-today-large.svg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     border-radius: 8px;
+     min-height: 34vh;
+     width: 100%;
+     max-width: 505px;
+     margin-left: 9rem;
      margin-top: 1.5rem;
+
+
  }
+
+ .city-info {
+     margin-top: 3.5rem;
+     margin-left: 1rem;
+     font-size: 0.6rem;
+     color: hsl(0, 0%, 100%);
+     font-family: "DM Sans";
+ }
+
+ .temperauremain {
+     margin-top: 3rem;
+     color: hsl(250, 6%, 84%);
+     margin-left: 3.2rem;
+     font-size: 1.5rem;
+     font-family: "Dm Sans";
+     font-weight: 300;
+ }
+ 
+.weather-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;               
+  margin-top: 2rem;
+  flex-wrap: wrap;         
+  margin-right: 18rem;
+  color: hsl(0, 0%, 100%) ;
+}
+
+.weather-stats > div {
+  flex: 0 1 auto;         
+  min-width: 90px;         
+  max-width: 110px;        
+  padding: 0.8rem;         
+  border-radius: 0.5rem;
+  text-align: left;
+  background-color: hsl(243, 27%, 20%);
+
+}
+
+.weather-stats p:first-child {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-bottom: 0.2rem;
+}
+
+.weather-stats p:last-child {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
