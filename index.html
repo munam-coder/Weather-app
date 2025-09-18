@@ -25,7 +25,7 @@
                     <div class="drop-down-item-switch">
                         Switch to Imperial
                     </div>
-                    <!-- section temperture -->
+                 
                     <div class="temperature">
                         <p>Temperature</p>
                         <button class="Celsiusbtn">Celsius (°C) <img
@@ -37,7 +37,7 @@
                     </div>
                     .
                     <div class="line"></div>
-                    <!-- Wind-speed -->
+                
                     <div class="wind-speed">
                         <p>Wind Speed</p>
                         <button class="kmh-btn">km/h <img src="./weather-app-main/assets/images/icon-checkmark.svg"
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="line2"></div>
-                    <!--  Precipitation -->
+            
                     <div class="Precipitation">
                         <p> Precipitation</p>
                         <button class="Millimetersbtn">Millimeters(mm) <img
@@ -57,58 +57,98 @@
                                 src="./weather-app-main/assets/images/icon-checkmark.svg" alt=""
                                 class="checkimg"></button>
                     </div>
-                    <!-- <div class="clicked"></div> -->
-
+            
                 </div>
             </div>
         </nav>
         <div class="main-wheather-continer">
             <div class="right-content">
-            <div class="main-heading">
-                <h1>How's the sky looking today?</h1>
+                <div class="main-heading">
+                    <h1>How's the sky looking today?</h1>
+                </div>
+                <div class="input">
+                    <form>
+                        <input type="text" placeholder=" Search for a city">
+                    </form>
+                    <div class="searchbtn">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="show-wheather-container">
+                    <div class="city-info">
+                        <h1>Berlin Germany</h1>
+                        <h3>Tuesday,August 5,2025 </h3>
+                    </div>
+                    <div class="temperauremain">
+                        <h1>20°</h1>
+                    </div>
+
+
+                </div>
+
+                <div class="weather-stats">
+                    <div class="feel-like">
+                        <p>Feels like</p>
+                        <p>18°</p>
+                    </div>
+                    <div class="Humidity">
+                        <p>Humidity</p>
+                        <p>46%</p>
+
+                    </div>
+                    <div class="Wind">
+                        <p>Wind</p>
+                        <p>14 km/h</p>
+                    </div>
+                    <div class="Precipitationmain">
+                        <p>Precipitation</p>
+                        <p>0 mm</p>
+                    </div>
+                </div>
+
+                <p class="forecast-heading">Daily forecast</p>
+                <!-- <div class="daily-forecast-container"> -->
+                <div class="daily-forcast">
+                    <div class="forecast-card">
+                        <p class="day">Mon</p>
+                        <img src="./weather-app-main/assets/images/icon-partly-cloudy.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Tue</p>
+                        <img src="./weather-app-main/assets/images/icon-storm.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Wed</p>
+                        <img src="./weather-app-main/assets/images/icon-sunny.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Thur</p>
+                        <img src="./weather-app-main/assets/images/icon-rain.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">fri</p>
+                        <img src="./weather-app-main/assets/images/icon-snow.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">sat</p>
+                        <img src="./weather-app-main/assets/images/icon-drizzle.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+                    <div class="forecast-card">
+                        <p class="day">Sun</p>
+                        <img src="./weather-app-main/assets/images/icon-fog.webp" alt="">
+                        <p class="temp">28° / 18°</p>
+                    </div>
+
+                </div>
             </div>
-            <div class="input">
-                <form>
-                    <input type="text" placeholder=" Search for a city">
-                </form>
-                <div class="searchbtn">
-                    <button>Search</button>
-                </div>
-            </div>
-            <div class="show-wheather-container">
-                <div class="city-info">
-                    <h1>Berlin Germany</h1>
-                    <h3>Tuesday,August 5,2025 </h3>
-                </div>
-                <div class="temperauremain">
-                    <h1>20°</h1>
-                </div>
-
-
-            </div>
-
-            <div class="weather-stats">
-                <div class="feel-like">
-                    <p>Feels like</p>
-                    <p>18°</p>
-                </div>
-                <div class="Humidity">
-                    <p>Humidity</p>
-                    <p>46%</p>
-
-                </div>
-                <div class="Wind">
-                    <p>Wind</p>
-                    <p>14 km/h</p>
-                </div>
-                <div class="Precipitationmain">
-                    <p>Precipitation</p>
-                    <p>0 mm</p>
-                </div>
-            </div>
-
-            <div class="daily-forcast">
-                <div class="forcast-cards">
+            <div class="left-content">
+                <div class="hourly-forcast">
                     
                 </div>
             </div>
