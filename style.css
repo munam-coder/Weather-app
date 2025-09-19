@@ -47,7 +47,7 @@
  .nav-elements {
      display: flex;
      justify-content: space-between;
-     margin-top: -1rem;
+     margin-top: -2rem;
  }
 
  .logo {
@@ -178,7 +178,7 @@
  .main-heading {
      display: flex;
      justify-content: center;
-     margin-top: 1rem;
+     margin-top: 0rem;
  }
 
  .main-heading h1 {
@@ -191,7 +191,7 @@
  .input {
      display: flex;
      justify-content: center;
-     margin-top: 2rem;
+     margin-top: 1rem;
      gap: 5.3rem;
      flex-wrap: wrap;
  }
@@ -226,6 +226,10 @@
      cursor: pointer;
  }
 
+.main-wheather-continer{
+    display: flex;
+    gap: 1rem;
+}
 
 
  .show-wheather-container {
@@ -261,103 +265,116 @@
      font-family: "Dm Sans";
      font-weight: 300;
  }
+
+ .weather-stats {
+     display: flex;
+     justify-content: center;
+     gap: 1rem;
+     margin-top: 2rem;
+     margin-left: 9rem;
+     flex-wrap: wrap;
+     color: hsl(0, 0%, 100%);
+ }
+
+ .weather-stats>div {
+     flex: 0 1 auto;
+     min-width: 90px;
+     max-width: 110px;
+     padding: 0.8rem;
+     border-radius: 0.5rem;
+     text-align: left;
+     background-color: hsl(243, 27%, 20%);
+     font-family: "Dm Sans";
+
+ }
+
  
-.weather-stats {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;               
-  margin-top: 2rem;
-  flex-wrap: wrap;         
-  margin-right: 18rem;
-  color: hsl(0, 0%, 100%) ;
+ .weather-stats p:first-child {
+     font-size: 0.8rem;
+     opacity: 0.8;
+     margin-bottom: 0.2rem;
+ }
+
+ .weather-stats p:last-child {
+     font-size: 1rem;
+     font-weight: bold;
+ }
+
+ .weather-stats>div:hover {
+     background-color: rgba(255, 255, 255, 0.1);
+
+ }
+
+ .forecast-heading {
+     color: hsl(0, 0%, 100%);
+     font-size: 1rem;
+     font-weight: 600;
+     margin-bottom: 0.8rem;
+     transform: translateY(28px);
+     margin-left: 9rem;
+     font-family: "DM Sans";
+ }
+
+ .daily-forcast {
+     display: flex;
+     gap: 0.6rem;
+     margin-top: 3rem;
+     margin-left: 8.8rem;
+     overflow-x: auto;
+     padding-bottom: 0.5rem;
+     font-family: "DM Sans";
+ }
+
+ .daily-forcast::-webkit-scrollbar {
+     display: none;
+ }
+
+ .forecast-card {
+     flex: 0 0 48px;
+     background: hsl(243, 27%, 20%);
+     border-radius: 0.8rem;
+     padding: 0.5rem;
+     text-align: center;
+     color: white;
+     backdrop-filter: blur(6px);
+     transition: transform 0.2s ease, background 0.2s ease;
+     min-height: 85px;
+ }
+
+ .forecast-card:hover {
+     transform: translateY(-4px);
+     background: rgba(255, 255, 255, 0.1);
+ }
+
+ .forecast-card .day {
+     font-weight: 600;
+     font-size: 0.75rem;
+     margin-bottom: 0.2rem;
+ }
+
+ .forecast-card img {
+     width: 22px;
+     height: 22px;
+     margin: 0.3rem 0;
+ }
+
+ .forecast-card .temp {
+     font-size: 0.7rem;
+     line-height: 1.1;
+     opacity: 0.8;
+ }
+
+
+.hourly-forcast{
+    height: 69vh;
+    width: 20vw;
+    margin-top: 1.6rem;
+    background-color: hsl(243, 27%, 20%);
+
+
 }
 
-.weather-stats > div {
-  flex: 0 1 auto;         
-  min-width: 90px;         
-  max-width: 110px;        
-  padding: 0.8rem;         
-  border-radius: 0.5rem;
-  text-align: left;
-  background-color: hsl(243, 27%, 20%);
-
+.heading-dropdown{
+    display: flex;
+    gap: 7rem;
 }
-
-.weather-stats p:first-child {
-  font-size: 0.8rem;
-  opacity: 0.8;
-  margin-bottom: 0.2rem;
-}
-
-.weather-stats p:last-child {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.weather-stats > div:hover{
-   background-color:  rgba(255, 255, 255, 0.1);
-  
-}
-
-
-
-.forecast-heading {
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem; 
-transform: translateY(28px);
-margin-left: 9rem;
-font-family: "DM Sans";
-}
-
-.daily-forcast {
-  display: flex;
-  gap: 0.6rem;
-  margin-top: 3rem;
-  margin-left: 8.8rem;
-  overflow-x: auto;   
-  padding-bottom: 0.5rem;
-}
-
-.daily-forcast::-webkit-scrollbar {
-  display: none; 
-}
-
-.forecast-card {
-   flex: 0 0 48px;       
-  background: hsl(243, 27%, 20%);
-  border-radius: 0.8rem;
-  padding: 0.5rem;
-  text-align: center;
-  color: white;
-  backdrop-filter: blur(6px);
-  transition: transform 0.2s ease, background 0.2s ease;
-  min-height: 85px;    
-}
-
-.forecast-card:hover {
-  transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.forecast-card .day {
-  font-weight: 600;
-  font-size: 0.75rem;   
-  margin-bottom: 0.2rem;
-}
-
-.forecast-card img {
-  width: 22px;   
-  height: 22px;
-  margin: 0.3rem 0;
-}
-
-.forecast-card .temp {
-  font-size: 0.7rem;  
-  line-height: 1.1;
-  opacity: 0.8;
-}
-
-
-
