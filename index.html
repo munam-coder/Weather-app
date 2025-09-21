@@ -25,7 +25,7 @@
                     <div class="drop-down-item-switch">
                         Switch to Imperial
                     </div>
-                 
+
                     <div class="temperature">
                         <p>Temperature</p>
                         <button class="Celsiusbtn">Celsius (°C) <img
@@ -37,7 +37,7 @@
                     </div>
                     .
                     <div class="line"></div>
-                
+
                     <div class="wind-speed">
                         <p>Wind Speed</p>
                         <button class="kmh-btn">km/h <img src="./weather-app-main/assets/images/icon-checkmark.svg"
@@ -47,7 +47,7 @@
                     </div>
 
                     <div class="line2"></div>
-            
+
                     <div class="Precipitation">
                         <p> Precipitation</p>
                         <button class="Millimetersbtn">Millimeters(mm) <img
@@ -57,23 +57,24 @@
                                 src="./weather-app-main/assets/images/icon-checkmark.svg" alt=""
                                 class="checkimg"></button>
                     </div>
-            
+
                 </div>
             </div>
         </nav>
+        <div class="main-heading">
+            <h1>How's the sky looking today?</h1>
+        </div>
+        <div class="input">
+            <form>
+                <input type="text" placeholder=" Search for a city">
+            </form>
+            <div class="searchbtn">
+                <button>Search</button>
+            </div>
+        </div>
         <div class="main-wheather-continer">
             <div class="right-content">
-                <div class="main-heading">
-                    <h1>How's the sky looking today?</h1>
-                </div>
-                <div class="input">
-                    <form>
-                        <input type="text" placeholder=" Search for a city">
-                    </form>
-                    <div class="searchbtn">
-                        <button>Search</button>
-                    </div>
-                </div>
+
                 <div class="show-wheather-container">
                     <div class="city-info">
                         <h1>Berlin Germany</h1>
@@ -107,7 +108,6 @@
                 </div>
 
                 <p class="forecast-heading">Daily forecast</p>
-                <!-- <div class="daily-forecast-container"> -->
                 <div class="daily-forcast">
                     <div class="forecast-card">
                         <p class="day">Mon</p>
@@ -149,10 +149,77 @@
             </div>
             <div class="left-content">
                 <div class="hourly-forcast">
-                    
+                    <div class="hourly-forecast-header">
+                        <span class="hourly-forecast-title">Hourly forecast</span>
+                        <button class="days-dropdownmain">
+                            <span class="selected-day">Days</span>
+                            <img src="./weather-app-main/assets/images/arrow-down-s-line.svg" alt="Dropdown"
+                                class="dropdown-arrow" />
+                        </button>
+
+                        <div class="dropdown-x-days">
+                            <button class="day-btn">Monday</button>
+                            <button class="day-btn">Tuesday</button>
+                            <button class="day-btn">Wednesday</button>
+                            <button class="day-btn">Thursday</button>
+                            <button class="day-btn">Friday</button>
+                            <button class="day-btn">Saturday</button>
+                            <button class="day-btn">Sunday</button>
+                        </div>
+                    </div>
+                    <div class="hourly-forecast-cards">
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-partly-cloudy.webp" alt="Cloudy"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">3 PM</span>
+                            <span class="hour-temp">68°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-partly-cloudy.webp" alt="Cloudy"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">4 PM</span>
+                            <span class="hour-temp">68°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-sunny.webp" alt="Sunny"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">5 PM</span>
+                            <span class="hour-temp">68°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-rain.webp" alt="Rain"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">6 PM</span>
+                            <span class="hour-temp">66°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-rain.webp" alt="Rain"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">7 PM</span>
+                            <span class="hour-temp">66°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-drizzle.webp" alt="drizzle"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">8 PM</span>
+                            <span class="hour-temp">64°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-fog.webp" alt="fog"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">9 PM</span>
+                            <span class="hour-temp">63°</span>
+                        </div>
+                        <div class="hourly-forecast-card">
+                            <img src="./weather-app-main/assets/images/icon-partly-cloudy.webp" alt="Cloudy"
+                                class="hourly-weather-icon" />
+                            <span class="hour-label">10 PM</span>
+                            <span class="hour-temp">63°</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
     </main>
     <script src="script.js"></script>
