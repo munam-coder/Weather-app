@@ -151,21 +151,24 @@
                 <div class="hourly-forcast">
                     <div class="hourly-forecast-header">
                         <span class="hourly-forecast-title">Hourly forecast</span>
-                        <button class="days-dropdownmain">
-                            <span class="selected-day">Days</span>
-                            <img src="./weather-app-main/assets/images/arrow-down-s-line.svg" alt="Dropdown"
-                                class="dropdown-arrow" />
-                        </button>
-
-                        <div class="dropdown-x-days">
-                            <button class="day-btn">Monday</button>
-                            <button class="day-btn">Tuesday</button>
-                            <button class="day-btn">Wednesday</button>
-                            <button class="day-btn">Thursday</button>
-                            <button class="day-btn">Friday</button>
-                            <button class="day-btn">Saturday</button>
-                            <button class="day-btn">Sunday</button>
+                        <div class="days-dropdown-wrapper">
+                            <button class="days-dropdown-btn" tabindex="0">
+                                <span class="selected-day">Days</span>
+                                <img src="./weather-app-main/assets/images/arrow-down-s-line.svg" alt="Dropdown"
+                                    class="dropdown-arrow" />
+                            </button>
+                            <div class="dropdown-x-days custom-days-dropdown show">
+                                <button class="dropdown-day-item selected" tabindex="0">Monday</button>
+                                <button class="dropdown-day-item" tabindex="0">Tuesday</button>
+                                <button class="dropdown-day-item" tabindex="0">Wednesday</button>
+                                <button class="dropdown-day-item" tabindex="0">Thursday</button>
+                                <button class="dropdown-day-item" tabindex="0">Friday</button>
+                                <button class="dropdown-day-item" tabindex="0">Saturday</button>
+                                <button class="dropdown-day-item" tabindex="0">Sunday</button>
+                            </div>
                         </div>
+
+
                     </div>
                     <div class="hourly-forecast-cards">
                         <div class="hourly-forecast-card">
