@@ -389,7 +389,7 @@ text-align: center;
      max-width: 240px;
      min-width: 140px;
      padding: 0 0 1.2rem 0;
-     margin-top: 1.4rem;
+     margin-top: 1.3rem;
      display: flex;
      flex-direction: column;
      gap: 0.5rem;
@@ -402,7 +402,7 @@ text-align: center;
      align-items: center;
      justify-content: space-between;
      padding: 1rem 0.8rem 0.6rem 0.8rem;
-     gap: 0.3rem;
+     gap: 1.3rem;
      flex-wrap: nowrap;
  }
 
@@ -444,32 +444,6 @@ text-align: center;
      margin-left: 0.08rem;
  }
 
- .dropdown-x-days {
-     position: absolute;
-     margin-top: 2.2rem;
-     right: 1rem;
-     background: hsl(243, 27%, 20%);
-     border-radius: 8px;
-     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
-     display: none;
-     min-width: 90px;
-     z-index: 10;
-     flex-direction: column;
- }
-
- .dropdown-x-days .dropdown-day-item {
-     color: #fff;
-     padding: 0.45rem 0.6rem;
-     font-family: "DM Sans", sans-serif;
-     font-size: 0.93rem;
-     cursor: pointer;
-     transition: background 0.18s;
- }
-
- .dropdown-x-days .dropdown-day-item.selected,
- .dropdown-x-days .dropdown-day-item:hover {
-     background: hsl(243, 23%, 24%);
- }
 
  .hourly-forecast-cards {
      display: flex;
@@ -569,7 +543,7 @@ text-align: center;
  }
 
  .days-dropdown-list {
-     display: none;
+     display: block;
      position: absolute;
      top: 120%;
      right: 0;
@@ -622,7 +596,7 @@ text-align: center;
 
 
  .dropdown-x-days.custom-days-dropdown {
-     display: none;
+      display: block;
      position: absolute;
      right: 0;
      top: 120%;
@@ -671,3 +645,122 @@ text-align: center;
  .dropdown-day-item:focus {
      background: hsl(243, 23%, 24%);
  }
+
+.days-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.days-dropdown-btn {
+    display: flex;
+    align-items: center;
+    background: hsl(243, 23%, 24%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.92rem;
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+    min-width: 120px;
+    justify-content: space-between;
+    transition: background 0.18s;
+    outline: none;
+    width: 98px;
+}
+
+.days-dropdown-btn:active,
+.days-dropdown-btn:focus {
+    background: hsl(243, 33%, 30%);
+}
+
+.dropdown-arrow {
+    margin-left: 0.15rem;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.days-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.days-dropdown-btn {
+    display: flex;
+    align-items: center;
+    background: hsl(243, 23%, 24%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.92rem;
+    font-family: "DM Sans", sans-serif;
+    cursor: pointer;
+    min-width: 80px;
+    justify-content: space-between;
+    transition: background 0.18s;
+    outline: none;
+    width: 80px;
+    height: 2rem;
+}
+
+.days-dropdown-btn:active,
+.days-dropdown-btn:focus {
+    background: hsl(243, 33%, 30%);
+}
+
+.dropdown-arrow {
+    margin-left: 0.1rem;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+
+.dropdown-x-days.custom-days-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 110%;
+    min-width: 80px;
+    background: hsl(243, 27%, 20%);
+    border-radius: 9px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+    padding: 0.2rem 0;
+    z-index: 20;
+    flex-direction: column;
+    animation: fadeIn 0.13s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.dropdown-day-item {
+    color: #fff;
+    padding: 0.45rem 1rem 0.45rem 1rem;
+    font-size: 0.97rem;
+    cursor: pointer;
+    background: transparent;
+    transition: background 0.16s;
+    border: none;
+    text-align: left;
+    border-radius: 7px;
+    outline: none;
+    font-family: "DM Sans", sans-serif;
+    width: 100%;
+    display: block;
+}
+
+.dropdown-day-item.selected,
+.dropdown-day-item:hover,
+.dropdown-day-item:focus {
+    background: hsl(243, 23%, 24%);
+}
+
+
