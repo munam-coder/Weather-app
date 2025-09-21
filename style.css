@@ -73,16 +73,17 @@
  .dropdown-btn {
      display: flex;
      align-items: center;
-     gap: 0.5rem;
-     border: none;
-     background-color: hsl(242, 27%, 20%);
-     padding: 0.25rem 1rem;
-     color: hsl(250, 6%, 84%);
-     font-size: 1rem;
-     border-radius: 0.5rem;
+     background-color: rgb(38, 37, 65);
+     color: rgb(213, 212, 217);
+     font-size: 0.82rem;
      cursor: pointer;
      margin-right: 5%;
-
+     gap: 0.18rem;
+     border: none;
+     padding: 1.11rem 0.36rem;
+     border-radius: 0.40rem;
+     height: 1.6rem;
+     min-width: unset;
 
  }
 
@@ -117,7 +118,6 @@
      background-color: hsl(243, 23%, 24%);
  }
 
- /* Temperature, Wind, Precipitation */
  .temperature p,
  .wind-speed p,
  .Precipitation p {
@@ -134,7 +134,6 @@
      flex-direction: column;
  }
 
- /* Divider lines */
  .line,
  .line2 {
      width: 90%;
@@ -213,23 +212,31 @@
  }
 
  .searchbtn button {
-     height: 80%;
-     width: 6vw;
-     padding-bottom: 0.6rem;
-     padding-top: 0.6rem;
-     margin-top: 0.1rem;
-     border-radius: 8px;
-     text-align: center;
-     background-color: hsl(233, 67%, 56%);
-     color: hsl(0, 0%, 100%);
-     border: none;
-     cursor: pointer;
+   display: flex;
+align-items: center;
+justify-content: center;  
+background-color: rgb(68, 85, 218);
+color: rgb(255, 255, 255);
+font-size: 0.9rem;
+cursor: pointer;
+border-radius: 8px;
+border: none;
+height: 80%;
+width: 6vw;
+padding-bottom: 0.6rem;
+padding-top: 0.6rem;
+margin-top: 0.1rem;
+text-align: center; 
  }
 
-.main-wheather-continer{
-    display: flex;
-    gap: 1rem;
-}
+ .searchbtn button:hover{
+    background-color: hsl(248, 70%, 36%);
+ }
+
+ .main-wheather-continer {
+     display: flex;
+     gap: 1rem;
+ }
 
 
  .show-wheather-container {
@@ -288,7 +295,7 @@
 
  }
 
- 
+
  .weather-stats p:first-child {
      font-size: 0.8rem;
      opacity: 0.8;
@@ -365,16 +372,302 @@
  }
 
 
-.hourly-forcast{
-    height: 69vh;
-    width: 20vw;
-    margin-top: 1.6rem;
-    background-color: hsl(243, 27%, 20%);
+ .hourly-forcast {
+     height: 69vh;
+     width: 20vw;
+     margin-top: 1.6rem;
+     background-color: hsl(243, 27%, 20%);
+     border-radius: 10px;
 
 
-}
+ }
 
-.heading-dropdown{
-    display: flex;
-    gap: 7rem;
-}
+ .hourly-forcast {
+     background: hsl(243, 27%, 20%);
+     border-radius: 16px;
+     width: 90vw;
+     max-width: 240px;
+     min-width: 140px;
+     padding: 0 0 1.2rem 0;
+     margin-top: 1.4rem;
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+     min-height: 370px;
+ }
+
+ .hourly-forecast-header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1rem 0.8rem 0.6rem 0.8rem;
+     gap: 0.3rem;
+     flex-wrap: nowrap;
+ }
+
+ .hourly-forecast-title {
+     color: #fff;
+     font-size: 0.9rem;
+     font-weight: 600;
+     font-family: "DM Sans", sans-serif;
+     letter-spacing: 0.01em;
+     white-space: nowrap;
+ }
+
+ .days-dropdownmain {
+     background: hsl(243, 23%, 24%);
+     color: #fff;
+     border: none;
+     border-radius: 7px;
+     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+     font-size: 0.9rem;
+     font-family: "DM Sans", sans-serif;
+     display: flex;
+     align-items: center;
+     gap: 0.2rem;
+     cursor: pointer;
+     transition: background 0.18s;
+     outline: none;
+     min-width: unset;
+     max-width: 84px;
+ }
+
+ .days-dropdownmain:active,
+ .days-dropdownmain:focus {
+     background: hsl(243, 33%, 30%);
+ }
+
+ .dropdown-arrow {
+     width: 16px;
+     height: 16px;
+     margin-left: 0.08rem;
+ }
+
+ .dropdown-x-days {
+     position: absolute;
+     margin-top: 2.2rem;
+     right: 1rem;
+     background: hsl(243, 27%, 20%);
+     border-radius: 8px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+     display: none;
+     min-width: 90px;
+     z-index: 10;
+     flex-direction: column;
+ }
+
+ .dropdown-x-days .dropdown-day-item {
+     color: #fff;
+     padding: 0.45rem 0.6rem;
+     font-family: "DM Sans", sans-serif;
+     font-size: 0.93rem;
+     cursor: pointer;
+     transition: background 0.18s;
+ }
+
+ .dropdown-x-days .dropdown-day-item.selected,
+ .dropdown-x-days .dropdown-day-item:hover {
+     background: hsl(243, 23%, 24%);
+ }
+
+ .hourly-forecast-cards {
+     display: flex;
+     flex-direction: column;
+     gap: 0.60rem;
+     padding: 0 0.8rem;
+ }
+
+ .hourly-forecast-card {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+     background: hsla(0, 0%, 100%, 0.06);
+     border-radius: 7px;
+     padding: 0.34rem 0.5rem;
+     margin: 0;
+     transition: background 0.18s;
+     cursor: pointer;
+     gap: 0.5rem;
+ }
+
+ .hourly-forecast-card:hover {
+     background: hsla(0, 0%, 100%, 0.12);
+ }
+
+ .hour-label {
+     color: hsl(0, 0%, 100%);
+     font-size: 0.97rem;
+     font-family: "DM Sans", sans-serif;
+     font-weight: 500;
+     opacity: 0.93;
+     flex: 1 1 38%;
+     min-width: 0;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     overflow: hidden;
+     order: 1;
+ }
+
+ .hourly-weather-icon {
+     width: 20px;
+     height: 20px;
+     margin-right: 0.35rem;
+     flex: 0 0 20px;
+     order: 0;
+ }
+
+ .hour-temp {
+     color: #fff;
+     font-size: 0.97rem;
+     font-family: "DM Sans", sans-serif;
+     font-weight: 600;
+     flex: 1 1 22%;
+     min-width: 0;
+     text-align: right;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     overflow: hidden;
+     order: 2;
+ }
+
+
+
+ .days-dropdown-wrapper {
+     position: relative;
+     display: inline-block;
+     width: 100%;
+ }
+
+ .days-dropdown-btn {
+     display: flex;
+     align-items: center;
+     background: hsl(243, 23%, 24%);
+     color: #fff;
+     border: none;
+     border-radius: 7px;
+     padding: 0.3rem 0.6rem;
+     font-size: 0.92rem;
+     font-family: "DM Sans", sans-serif;
+     cursor: pointer;
+     width: 98px;
+     justify-content: space-between;
+     transition: background 0.18s;
+     outline: none;
+ }
+
+ .days-dropdown-btn:active,
+ .days-dropdown-btn:focus {
+     background: hsl(243, 33%, 30%);
+ }
+
+ .dropdown-arrow {
+     margin-left: 0.15rem;
+     width: 16px;
+     height: 16px;
+     pointer-events: none;
+ }
+
+ .days-dropdown-list {
+     display: none;
+     position: absolute;
+     top: 120%;
+     right: 0;
+     left: auto;
+     z-index: 10;
+     min-width: 140px;
+     background: hsl(243, 27%, 20%);
+     border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+     padding: 0.25rem 0;
+     margin-top: 0.3rem;
+     font-family: "DM Sans", sans-serif;
+ }
+
+ .days-dropdown-list.show {
+     display: flex;
+     flex-direction: column;
+     animation: fadeIn 0.13s;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-8px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .dropdown-day-item {
+     color: #fff;
+     padding: 0.58rem 1.2rem 0.58rem 1rem;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background 0.18s;
+     border-radius: 6px;
+     white-space: nowrap;
+     user-select: none;
+ }
+
+ .dropdown-day-item.selected,
+ .dropdown-day-item:hover {
+     background: hsl(243, 23%, 24%);
+ }
+
+
+
+
+ .dropdown-x-days.custom-days-dropdown {
+     display: none;
+     position: absolute;
+     right: 0;
+     top: 120%;
+     min-width: 180px;
+     background: hsl(243, 27%, 20%);
+     border-radius: 12px;
+     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+     padding: 0.3rem 0;
+     z-index: 20;
+     flex-direction: column;
+     animation: fadeIn 0.13s;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-8px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .dropdown-x-days.custom-days-dropdown.show {
+     display: flex;
+ }
+
+ .dropdown-day-item {
+     color: #fff;
+     padding: 0.75rem 1.5rem 0.75rem 1.2rem;
+     font-size: 1.03rem;
+     cursor: pointer;
+     background: transparent;
+     transition: background 0.16s;
+     border: none;
+     text-align: left;
+     border-radius: 8px;
+     outline: none;
+     font-family: "DM Sans", sans-serif;
+ }
+
+ .dropdown-day-item.selected,
+ .dropdown-day-item:hover,
+ .dropdown-day-item:focus {
+     background: hsl(243, 23%, 24%);
+ }
