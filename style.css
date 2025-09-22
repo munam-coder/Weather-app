@@ -192,7 +192,7 @@
      justify-content: center;
      margin-top: 1rem;
      gap: 5.3rem;
-     flex-wrap: wrap;
+     /* flex-wrap: wrap; */
  }
 
  .input input {
@@ -212,25 +212,25 @@
  }
 
  .searchbtn button {
-   display: flex;
-align-items: center;
-justify-content: center;  
-background-color: rgb(68, 85, 218);
-color: rgb(255, 255, 255);
-font-size: 0.9rem;
-cursor: pointer;
-border-radius: 8px;
-border: none;
-height: 80%;
-width: 6vw;
-padding-bottom: 0.6rem;
-padding-top: 0.6rem;
-margin-top: 0.1rem;
-text-align: center; 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(68, 85, 218);
+     color: rgb(255, 255, 255);
+     font-size: 0.9rem;
+     cursor: pointer;
+     border-radius: 8px;
+     border: none;
+     height: 80%;
+     width: 6vw;
+     padding-bottom: 0.6rem;
+     padding-top: 0.6rem;
+     margin-top: 0.1rem;
+     text-align: center;
  }
 
- .searchbtn button:hover{
-    background-color: hsl(248, 70%, 36%);
+ .searchbtn button:hover {
+     background-color: hsl(248, 70%, 36%);
  }
 
  .main-wheather-continer {
@@ -254,6 +254,20 @@ text-align: center;
      margin-top: 1.5rem;
 
 
+ }
+
+
+
+ .temperauremain {
+     display: flex;
+     gap: 0.5vw;
+ }
+
+ .temperauremain img {
+     height: 8rem;
+     width: auto;
+     margin-left: -8rem;
+     margin-top: -2rem;
  }
 
  .city-info {
@@ -596,7 +610,7 @@ text-align: center;
 
 
  .dropdown-x-days.custom-days-dropdown {
-      display: block;
+     display: block;
      position: absolute;
      right: 0;
      top: 120%;
@@ -623,7 +637,7 @@ text-align: center;
  }
 
  .dropdown-x-days.custom-days-dropdown.show {
-     display: flex;
+     display: none;
  }
 
  .dropdown-day-item {
@@ -646,121 +660,227 @@ text-align: center;
      background: hsl(243, 23%, 24%);
  }
 
-.days-dropdown-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
+ .days-dropdown-wrapper {
+     position: relative;
+     display: inline-block;
+     width: 100%;
+ }
 
 
-.days-dropdown-btn {
-    display: flex;
-    align-items: center;
-    background: hsl(243, 23%, 24%);
-    color: #fff;
-    border: none;
-    border-radius: 7px;
-    padding: 0.3rem 0.6rem;
-    font-size: 0.92rem;
-    font-family: "DM Sans", sans-serif;
-    cursor: pointer;
-    min-width: 120px;
-    justify-content: space-between;
-    transition: background 0.18s;
-    outline: none;
-    width: 98px;
-}
+ .days-dropdown-btn {
+     display: flex;
+     align-items: center;
+     background: hsl(243, 23%, 24%);
+     color: #fff;
+     border: none;
+     border-radius: 7px;
+     padding: 0.3rem 0.6rem;
+     font-size: 0.92rem;
+     font-family: "DM Sans", sans-serif;
+     cursor: pointer;
+     min-width: 120px;
+     justify-content: space-between;
+     transition: background 0.18s;
+     outline: none;
+     width: 98px;
+ }
 
-.days-dropdown-btn:active,
-.days-dropdown-btn:focus {
-    background: hsl(243, 33%, 30%);
-}
+ .days-dropdown-btn:active,
+ .days-dropdown-btn:focus {
+     background: hsl(243, 33%, 30%);
+ }
 
-.dropdown-arrow {
-    margin-left: 0.15rem;
-    width: 16px;
-    height: 16px;
-    pointer-events: none;
-}
+ .dropdown-arrow {
+     margin-left: 0.15rem;
+     width: 16px;
+     height: 16px;
+     pointer-events: none;
+ }
 
-.days-dropdown-wrapper {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
+ .days-dropdown-wrapper {
+     position: relative;
+     display: inline-block;
+     width: 100%;
+ }
 
-.days-dropdown-btn {
-    display: flex;
-    align-items: center;
-    background: hsl(243, 23%, 24%);
-    color: #fff;
-    border: none;
-    border-radius: 7px;
-    padding: 0.25rem 0.6rem;
-    font-size: 0.92rem;
-    font-family: "DM Sans", sans-serif;
-    cursor: pointer;
-    min-width: 80px;
-    justify-content: space-between;
-    transition: background 0.18s;
-    outline: none;
-    width: 80px;
-    height: 2rem;
-}
+ .days-dropdown-btn {
+     display: flex;
+     align-items: center;
+     background: hsl(243, 23%, 24%);
+     color: #fff;
+     border: none;
+     border-radius: 7px;
+     padding: 0.25rem 0.6rem;
+     font-size: 0.92rem;
+     font-family: "DM Sans", sans-serif;
+     cursor: pointer;
+     min-width: 80px;
+     justify-content: space-between;
+     transition: background 0.18s;
+     outline: none;
+     width: 80px;
+     height: 2rem;
+ }
 
-.days-dropdown-btn:active,
-.days-dropdown-btn:focus {
-    background: hsl(243, 33%, 30%);
-}
+ .days-dropdown-btn:active,
+ .days-dropdown-btn:focus {
+     background: hsl(243, 33%, 30%);
+ }
 
-.dropdown-arrow {
-    margin-left: 0.1rem;
-    width: 16px;
-    height: 16px;
-    pointer-events: none;
-}
-
-
-.dropdown-x-days.custom-days-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 110%;
-    min-width: 80px;
-    background: hsl(243, 27%, 20%);
-    border-radius: 9px;
-    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
-    padding: 0.2rem 0;
-    z-index: 20;
-    flex-direction: column;
-    animation: fadeIn 0.13s;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-8px);}
-    to { opacity: 1; transform: translateY(0);}
-}
-
-.dropdown-day-item {
-    color: #fff;
-    padding: 0.45rem 1rem 0.45rem 1rem;
-    font-size: 0.97rem;
-    cursor: pointer;
-    background: transparent;
-    transition: background 0.16s;
-    border: none;
-    text-align: left;
-    border-radius: 7px;
-    outline: none;
-    font-family: "DM Sans", sans-serif;
-    width: 100%;
-    display: block;
-}
-
-.dropdown-day-item.selected,
-.dropdown-day-item:hover,
-.dropdown-day-item:focus {
-    background: hsl(243, 23%, 24%);
-}
+ .dropdown-arrow {
+     margin-left: 0.1rem;
+     width: 16px;
+     height: 16px;
+     pointer-events: none;
+ }
 
 
+ .dropdown-x-days.custom-days-dropdown {
+     display: none;
+     position: absolute;
+     right: 0;
+     top: 110%;
+     min-width: 80px;
+     background: hsl(243, 27%, 20%);
+     border-radius: 9px;
+     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+     padding: 0.2rem 0;
+     z-index: 20;
+     flex-direction: column;
+     animation: fadeIn 0.13s;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-8px);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .dropdown-day-item {
+     color: #fff;
+     padding: 0.45rem 1rem 0.45rem 1rem;
+     font-size: 0.97rem;
+     cursor: pointer;
+     background: transparent;
+     transition: background 0.16s;
+     border: none;
+     text-align: left;
+     border-radius: 7px;
+     outline: none;
+     font-family: "DM Sans", sans-serif;
+     width: 100%;
+     display: block;
+ }
+
+ .dropdown-day-item.selected,
+ .dropdown-day-item:hover,
+ .dropdown-day-item:focus {
+     background: hsl(243, 23%, 24%);
+ }
+
+
+ @media only screen and (max-width: 600px) {
+     .nav-elements {
+         margin-top: -3rem;
+     }
+
+     .main-logo {
+         height: 3vh;
+         width: auto;
+     }
+
+     .dropdown-btn {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         background-color: rgb(38, 37, 65);
+         color: rgb(213, 212, 217);
+         font-size: 0.82rem;
+         cursor: pointer;
+         gap: 0.18rem;
+         border: none;
+         padding: 1.11rem 0.36rem;
+         border-radius: 0.40rem;
+         height: 1.6rem;
+         min-width: unset;
+     }
+
+     .main-heading {
+         max-width: 13rem;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 3vh;
+         font-size: larger;
+     }
+
+     .main-heading h1 {
+         font-size: 9vw;
+     }
+
+     .input {
+
+         align-items: center;
+         flex-direction: column;
+         gap: 1rem;
+         margin-top: 2rem;
+
+     }
+
+     .input input {
+         font-size: 1rem;
+         padding: 0.7rem 1rem;
+         border-radius: 0.5rem;
+         width: 19rem;
+         margin: 0 auto;
+         background-color: hsl(243, 27%, 20%);
+         border: none;
+         box-sizing: border-box;
+     }
+
+
+     .searchbtn button {
+         height: 80%;
+         width: 19rem;
+         padding: 0.8rem 1rem;
+         text-align;
+     }
+
+
+     .main-wheather-continer {
+         flex-direction: column;
+     }
+
+
+     .show-wheather-container {
+         display: flex;
+         gap: 13rem;
+         background: url(./weather-app-main/assets/images/bg-today-small.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         border-radius: 8px;
+         min-height: 24vh;
+         width: 100%;
+         max-width: 300px;
+         margin: 0 auto;
+
+
+     }
+
+
+
+
+
+
+
+
+
+
+ }
