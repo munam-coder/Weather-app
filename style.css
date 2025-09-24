@@ -233,6 +233,31 @@
      background-color: hsl(248, 70%, 36%);
  }
 
+ .not-found{
+    color: hsl(0, 0%, 100%) ;
+    font-family: "DM Sans";
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+ }
+
+ .failed-api{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "DM Sans";
+    gap: 10px;
+    display: none;
+ }
+ .failed-api h1{
+    color: hsl(0, 0%, 100%) ;
+ }
+
+ .failed-api p{
+    color: hsl(240, 6%, 70%);
+ }
  .main-wheather-continer {
      display: flex;
      gap: 1rem;
@@ -1072,5 +1097,4 @@
      .hour-temp {
          font-size: 1rem;
      }
-
  }
