@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheather Now</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./weather-app-main/assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
 
 <body>
@@ -71,6 +72,9 @@
             <div class="searchbtn">
                 <button>Search</button>
             </div>
+        </div>
+        <div class="not-found">
+           <h3> No search result found!</h3>
         </div>
         <div class="main-wheather-continer">
             <div class="right-content">
@@ -223,6 +227,11 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="failed-api">
+            <img src="./weather-app-main/assets/images/forbidden-10030.svg" alt="" height="70px" width="70px">
+            <h1>Something went wrong</h1>
+            <p>We couldn't connect to the server(api error) please try again <br>in few moments</p>
         </div>
         </div>
     </main>
